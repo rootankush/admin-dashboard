@@ -14,76 +14,55 @@
 body {
   display: grid;
   background-color: white;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 20% 80%;
+}
+
+.left-main {
+  display: grid;
 }
 
 .sidebar {
   display: grid;
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 5rem 5rem 0 5rem;
   background-color: var(--blackcolor);
   color: white;
 }
 
+.right-main {
+  display: grid;
+}
+
 .header {
   display: grid;
   padding: 1rem;
-  grid-column: 2 / 5;
   color: #fff;
   background-color: var(--greycolor);
 }
 
 .top-section {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 65rem;
   font-size: 1rem;
-  justify-content: space-evenly;
 }
 
-.left-section {
+.bottom-section {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 65rem;
+  font-size: 1rem;
 }
 
-.right-section {
-  display: grid;
+.profile {
+  font-size: 4rem;
 }
 
-.main-container {
-  display: grid;
-  padding: 1rem;
-  gap: 1rem;
-  grid-template-columns: subgrid;
-  grid-column: 2 / 5;
-  grid-row: 2 / 3;
-  color: #fff;
-  background-color: var(--background);
-}
-
-.cell {
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  background-color: white;
-  color: black;
-  border-left: 5px var(--greenbluecolor);
-}
-
-.cell-2 {
+.left-section p {
+  display: inline-block;
   align-items: center;
-  font-size: 0.7rem;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  background-color: white;
-  color: black;
-  grid-column: 3 / 4;
-  grid-row: 1 / span 2;
 }
 
-.cell-3 {
-  padding: 2rem;
-  border-radius: 0.5rem;
-  background-color: white;
-  color: black;
-  grid-column: 3 / 4;
+.right-section p {
+  display: inline-block;
 }
