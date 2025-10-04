@@ -4,105 +4,168 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
     <title>Admin Dashboard</title>
   </head>
   <body>
     <div class="left-main">
       <aside class="sidebar">
-          <p><i class="mdi mdi-view-dashboard"></i> Dashboard</p>
-          <p class="middle-section">
-              <p><i class="mdi mdi-home"></i> Home</p>
-              <p><i class="mdi mdi-card-account-details"></i> Profile</p>
-              <p><i class="mdi mdi-message"></i> Messages</p>
-              <p><i class="mdi mdi-history"></i> History</p>
-              <p><i class="mdi mdi-calendar-check"></i> Tasks</p>
-              <p><i class="mdi mdi-account-group"></i> Communities</p>
-          </p>
-          <p class="end-section">
-              <p><i class="mdi mdi-cog"></i> Settings</p>
-              <p><i class="mdi mdi-help"></i> Support</p>
-              <p><i class="mdi mdi-shield-check"></i> Privacy</p>
-          </p>
-        </aside>
+        <span id="dashboard"
+          ><i class="mdi mdi-view-dashboard"></i> Dashboard</span
+        ><br />
+        <span><i class="mdi mdi-home"></i> Home</span><br />
+        <span><i class="mdi mdi-card-account-details"></i> Profile</span><br />
+        <span><i class="mdi mdi-message"></i> Messages</span><br />
+        <span><i class="mdi mdi-history"></i> History</span><br />
+        <span><i class="mdi mdi-calendar-check"></i> Tasks</span><br />
+        <span><i class="mdi mdi-account-group"></i> Communities</span><br />
+        <span id="settings"><i class="mdi mdi-cog"></i> Settings</span><br />
+        <span><i class="mdi mdi-help"></i> Support</span><br />
+        <span><i class="mdi mdi-shield-check"></i> Privacy</span>
+      </aside>
     </div>
     <div class="right-main">
       <nav class="header">
         <div class="top-section">
           <div class="left-section">
             <p><i class="mdi mdi-magnify"></i></p>
-            <input id="searchBar" type="text">
+            <input id="searchBar" type="text" />
           </div>
           <div class="right-section">
             <p><i class="mdi mdi-bell-ring"></i></p>
             <p><i class="mdi mdi-face-man-profile"></i></p>
-            <p>Ankush Pradhan</p>
+            <p>AnkushPradhan</p>
           </div>
         </div>
         <div class="bottom-section">
-         <div class="left-section-2">
-           <p class="profile"><i class="mdi mdi-face-man-profile"></i></p>
-           <p>Hi there,<br>
-           Ankush Pradhan (@rootankush)</p>
-         </div>
-         <div class="right-section">
-          <button class="blue-btn">New</button>
-          <button class="blue-btn">Upload</button>
-          <button class="blue-btn">Share</button>
-         </div>
+          <div class="left-section-2">
+            <p class="profile"><i class="mdi mdi-face-man-profile"></i></p>
+            <p>
+              Hi there,<br />
+              Ankush Pradhan (@rootankush)
+            </p>
+          </div>
+          <div class="right-section">
+            <button class="blue-btn">New</button>
+            <button class="blue-btn">Upload</button>
+            <button class="blue-btn">Share</button>
+          </div>
         </div>
       </nav>
       <div class="main-container">
-          <article class="cell">
-            <h1>Super Cool Project</h1>
-            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
-            <div class="bar-right"><p><i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i><i class="mdi mdi-source-fork"></i></p></div>
-          </article>
-          <article class="cell">
-            <h1>Less Cool Project</h1>
-            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sqpien in, varius pellentesque lacus.</p>
-            <div class="bar-right"><p><i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i><i class="mdi mdi-source-fork"></i></p></div>
-          </article>
-          <article class="cell">
-            <h1>Impossible App</h1>
-            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
-            <div class="bar-right"><p><i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i><i class="mdi mdi-source-fork"></i></p></div>
-          </article>
-          <article class="cell">
-            <h1>Easy Peasy App</h1>
-            <p>Etiam cursus eros ac efficitur fringilla. Vesstibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
-            <div class="bar-right"><p><i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i><i class="mdi mdi-source-fork"></i></p></div>
-          </article>
-          <article class="cell">
-            <h1>Ad Blocker</h1>
-            <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
-            <div class="bar-right"><p><i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i><i class="mdi mdi-source-fork"></i></p></div>
-          </article>
-          <article class="cell">
-            <h1>Money Maker</h1>
-            <p>This is basically a money making app like crypto idk which makes you money totaly not a scam</p>
-            <div class="bar-right"><p><i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i><i class="mdi mdi-source-fork"></i></p></div>
-          </article>
-          <article class="cell-2">
-            <h1>Site maintenance</h1>
-            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
-            <span></span>
-            <h1>Community Share Day</h1>
-            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
-            <span></span>
-            <h1>Updated Privacy Policy</h1>
-            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
-          </article>
-          <article class="cell-3">
-            <p><i class="mdi mdi-hand-peace green"></i></p>
-            <p>@rootankush<br>World Peace Builder</p>
-            <p><i class="mdi mdi-projector blue"></i></p>
-            <p>@rootankush<br>Super Cool Project</p>
-            <p><i class="mdi mdi-one-up red"></i></p>
-            <p>@rootankush<br>Life Changing App</p>
-            <p><i class="mdi mdi-traffic-light yellow"></i></p>
-            <p>@rootankush<br>No Traffic Maker</p>
-          </article>
+        <article class="cell">
+          <h1>Super Cool Project</h1>
+          <p>
+            Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+            erat, id facilisis felis accumsan nec.
+          </p>
+          <div class="bar-right">
+            <p>
+              <i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i
+              ><i class="mdi mdi-source-fork"></i>
+            </p>
+          </div>
+        </article>
+        <article class="cell">
+          <h1>Less Cool Project</h1>
+          <p>
+            Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed
+            dolor tincidunt, consectetur. Quisque sed dolor tincidunt,
+            consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut
+            sqpien in, varius pellentesque lacus.
+          </p>
+          <div class="bar-right">
+            <p>
+              <i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i
+              ><i class="mdi mdi-source-fork"></i>
+            </p>
+          </div>
+        </article>
+        <article class="cell">
+          <h1>Impossible App</h1>
+          <p>
+            In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+            placerat velit sagittis id.
+          </p>
+          <div class="bar-right">
+            <p>
+              <i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i
+              ><i class="mdi mdi-source-fork"></i>
+            </p>
+          </div>
+        </article>
+        <article class="cell">
+          <h1>Easy Peasy App</h1>
+          <p>
+            Etiam cursus eros ac efficitur fringilla. Vesstibulum dignissim urna
+            eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo,
+            ac bibendum magna tincidunt.
+          </p>
+          <div class="bar-right">
+            <p>
+              <i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i
+              ><i class="mdi mdi-source-fork"></i>
+            </p>
+          </div>
+        </article>
+        <article class="cell">
+          <h1>Ad Blocker</h1>
+          <p>
+            Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel,
+            pharetra hendrerit felis. Aliquam sed malesuada eros.
+          </p>
+          <div class="bar-right">
+            <p>
+              <i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i
+              ><i class="mdi mdi-source-fork"></i>
+            </p>
+          </div>
+        </article>
+        <article class="cell">
+          <h1>Money Maker</h1>
+          <p>
+            This is basically a money making app like crypto idk which makes you
+            money totaly not a scam
+          </p>
+          <div class="bar-right">
+            <p>
+              <i class="mdi mdi-star-plus"></i><i class="mdi mdi-eye-plus"></i
+              ><i class="mdi mdi-source-fork"></i>
+            </p>
+          </div>
+        </article>
+        <article class="cell-2">
+          <h1>Site maintenance</h1>
+          <p>
+            Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
+            Donec hendrerit sodales congue...
+          </p>
+          <span></span>
+          <h1>Community Share Day</h1>
+          <p>
+            Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
+            dictum accumsan porttitor...
+          </p>
+          <span></span>
+          <h1>Updated Privacy Policy</h1>
+          <p>
+            Phasellus efficitur nisi eget elit consectetur, eget condimentum
+            ante auctor. Cras fringilla sagittis sem in mattis...
+          </p>
+        </article>
+        <article class="cell-3">
+          <p><i class="mdi mdi-hand-peace green"></i></p>
+          <p>@rootankush<br />World Peace Builder</p>
+          <p><i class="mdi mdi-projector blue"></i></p>
+          <p>@rootankush<br />Super Cool Project</p>
+          <p><i class="mdi mdi-one-up red"></i></p>
+          <p>@rootankush<br />Life Changing App</p>
+          <p><i class="mdi mdi-traffic-light yellow"></i></p>
+          <p>@rootankush<br />No Traffic Maker</p>
+        </article>
       </div>
     </div>
   </body>
